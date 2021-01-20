@@ -1,12 +1,3 @@
 {
-  "presets": [
-    ["env", {
-      "targets": {
-        "node": 4
-      }
-    }]
-  ],
-  "plugins": [
-    "add-module-exports"
-  ]
+  "presets": ["@babel/preset-env"]
 }

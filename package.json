@@ -1,7 +1,14 @@
 {
   "name": "@notiv/postcss-property-lookup",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "PostCSS plugin that allows referencing property values without a variable",
+  "scripts": {
+    "lint": "eslint lib/index.js test/test.js",
+    "build": "babel lib --out-dir build",
+    "test": "jest",
+    "posttest": "npm run lint",
+    "prepublish": "npm run build"
+  },
   "keywords": [
     "postcss",
     "css",
@@ -16,25 +23,16 @@
   },
   "main": "build/index.js",
   "dependencies": {
-    "object-assign": "^4.0.1",
-    "postcss": "^6.0.6",
+    "postcss": "^8.2.4",
     "tcomb": "^3.2.21"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.3.26",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.7.0",
-    "jest": "^20.0.4"
-  },
-  "scripts": {
-    "lint": "eslint lib/index.js test/test.js",
-    "build": "babel lib --out-dir build",
-    "test": "jest",
-    "posttest": "npm run lint",
-    "prepublish": "npm run build"
+    "jest": "^26.6.3"
   }
 }
