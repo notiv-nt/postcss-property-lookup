@@ -1,6 +1,6 @@
 {
   "name": "@notiv/postcss-property-lookup",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "PostCSS plugin that allows referencing property values without a variable",
   "scripts": {
     "lint": "eslint lib/index.js test/test.js",
